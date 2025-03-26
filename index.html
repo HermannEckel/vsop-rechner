@@ -1,1 +1,30 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>VSOP Rechner</title></head><body><div id='root'></div><script type='module' src='/src/main.jsx'></script></body></html>
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VSOP Rechner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>VSOP-Rechner</h1>
+      <label>
+        Gehaltsverzicht monatlich (€):
+        <input type="number" id="verzicht" value="500">
+      </label>
+      <label>
+        Laufzeit (Jahre):
+        <input type="number" id="laufzeit" value="4">
+      </label>
+      <label>
+        Unternehmensbewertung (€):
+        <input type="number" id="bewertung" value="5000000">
+      </label>
+      <button onclick="berechne()">Berechnen</button>
+      <div id="ergebnis" class="result"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
